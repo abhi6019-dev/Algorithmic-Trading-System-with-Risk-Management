@@ -4,7 +4,7 @@ from src.visualization import plot_results
 from src.strategy import generate_signals
 from src.backtest import run_backtest
 def main():
-    data = load_data("^NSEI", "2015-01-01", "2025-01-01")
+    data = load_data("AAPL", "2015-01-01", "2025-01-01")
 
     data = add_indicator(data, 20)   # if you already have it
     data = generate_signals(data)
