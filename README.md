@@ -1,83 +1,130 @@
-# 📈 Algorithmic Trading System with Risk Management
+# 📊 Algorithmic Trading System with Risk Management
 
-A scalable and modular algorithmic trading framework designed for developing, backtesting, and deploying trading strategies with a strong focus on risk management and capital preservation.
-
----
-
-## 🚀 Overview
-
-This project implements a full pipeline for quantitative trading, including data ingestion, strategy execution, backtesting, and performance evaluation. The system is built to simulate real-world trading conditions while enforcing strict risk controls.
+A modular algorithmic trading system built using Python that combines multiple trading strategies, risk management, and a backtesting engine to evaluate systematic trading performance on historical market data.
 
 ---
 
-## ✨ Key Features
+## 🚀 Project Overview
 
-- 📊 **Backtesting Engine**  
-  Test trading strategies on historical market data with realistic assumptions (slippage, transaction costs).
+This project implements a quantitative trading framework inspired by real-world hedge fund systems. It focuses on:
 
-- ⚡ **Real-Time Signal Generation**  
-  Generate buy/sell signals based on custom strategies.
-
-- 🛡️ **Risk Management Module**  
-  - Position sizing (fixed, volatility-based)  
-  - Stop-loss & take-profit mechanisms  
-  - Maximum drawdown control  
-
-- 📉 **Performance Analytics**  
-  Evaluate strategy performance using metrics such as Sharpe ratio, drawdown, win rate, and returns.
-
-- 🧩 **Modular Architecture**  
-  Easily extendable for new strategies, assets, and data sources.
+- Signal generation using multiple strategies  
+- Portfolio signal aggregation  
+- Risk management and drawdown control  
+- Backtesting using historical data (via yfinance)  
+- Performance evaluation using key financial metrics  
 
 ---
 
-## 🏗️ System Architecture
- Data Layer → Strategy Layer → Execution Engine → Risk Management → Analytics
+## 🧠 Key Features
 
+### 📈 Trading Strategies
+- Momentum-based strategy (trend following)
+- Mean reversion strategy (z-score based)
+- Ensemble signal combination
+
+### ⚖️ Risk Management
+- Volatility-based position sizing
+- Drawdown monitoring
+- Exposure control framework
+
+### 🧪 Backtesting Engine
+- Historical simulation of strategy performance
+- Strategy returns computation
+- Equity curve generation
+
+### 📊 Performance Metrics
+- Sharpe Ratio
+- Maximum Drawdown
+- CAGR (Compound Annual Growth Rate)
 
 ---
 
-## 📂 Project Structure
- ├── data/ # Historical and live market data
- ├── strategies/ # Trading strategies
- ├── backtesting/ # Backtesting engine
- ├── execution/ # Trade execution logic
- ├── risk/ # Risk management modules
- ├── analytics/ # Performance evaluation
- ├── utils/ # Helper functions
- └── main.py # Entry point
- 
+## 🏗️ Project Structure
+
+```
+algorithmic-trading-system-with-risk-management/
+│
+├── data/
+├── strategies/
+├── backtest/
+├── portfolio/
+├── risk/
+├── metrics/
+├── main.py
+└── requirements.txt
+```
 
 ---
 
 ## ⚙️ Installation
- git clone https://github.com/abhi6019-dev/algorithmic-trading-system.git
- cd algorithmic-trading-system
 
-## ▶️ Usage
- python main.py
- Modify strategy parameters inside the strategies/ folder to test different approaches.
+```bash
+git clone https://github.com/abhi6019-dev/algorithmic-trading-system-with-risk-management
+cd algorithmic-trading-system-with-risk-management
+pip install -r requirements.txt
+```
 
-## 📊 Example Metrics
- Sharpe Ratio
- Maximum Drawdown
- CAGR
- Win Rate
+---
 
-## 🧠 Design Philosophy
+## 📦 Requirements
 
- This system prioritizes:
+```
+pandas
+numpy
+yfinance
+matplotlib
+```
 
- Risk-adjusted returns over raw profitability
- Robustness under varying market conditions
- Clean, extensible architecture for research and production
+---
 
-## 🔮 Future Improvements
- Live trading integration (broker APIs)
- Machine learning-based strategies
- Portfolio optimization
- Multi-asset support
+## ▶️ How to Run
+
+```bash
+python main.py
+```
+
+---
+
+## 📊 Output
+
+- Equity curve
+- Sharpe ratio
+- Max drawdown
+- CAGR
+- Strategy performance summary
+
+---
+
+## 📉 Metrics
+
+Sharpe:
+Sharpe = (Rp - Rf) / sigma_p
+
+Max Drawdown:
+Drawdown = (Peak - Trough) / Peak
+
+CAGR:
+CAGR = (Ending / Beginning)^(1/n) - 1
+
+---
+
+## 🚀 Future Improvements
+
+- ML-based alpha models
+- Portfolio optimization
+- Transaction costs + slippage
+- Walk-forward validation
+- Live trading integration
+
+---
 
 ## ⚠️ Disclaimer
 
- This project is for educational purposes only and does not constitute financial advice. Trading involves risk, and past performance does not guarantee future results.
+Educational use only. Not financial advice.
+
+---
+
+## 👨‍💻 Author
+
+Abhi (abhi6019-dev)
