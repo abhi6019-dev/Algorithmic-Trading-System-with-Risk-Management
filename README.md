@@ -54,6 +54,11 @@ python main.py
 ```
 ---
 
+## Robustness Check
+Tested across multiple market conditions and validated against benchmark performance.
+
+---
+
 ## ⚠️ Notes
 
 - Backtest only  
