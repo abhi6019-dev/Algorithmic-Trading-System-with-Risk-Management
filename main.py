@@ -8,7 +8,7 @@ from src.visualization import plot_equity_curve, plot_with_benchmark, plot_drawd
 
 def main():
     # 📊 Load data
-    data = load_data("AAPL", "2015-01-01", "2025-01-01")
+    data = load_data("NVDA", "2015-01-01", "2025-01-01")
 
     
     # 🧠 Add indicators
