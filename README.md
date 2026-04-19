@@ -46,12 +46,12 @@ Avg Loss: -0.024
 ---
 
 ## ▶️ Run
-
+```typescript
 git clone https://github.com/abhi6019-dev/algorithmic-trading-system-with-risk-management  
 cd algorithmic-trading-system-with-risk-management  
 pip install -r requirements.txt  
 python main.py  
-
+```
 ---
 
 ## ⚠️ Notes
